@@ -1,12 +1,15 @@
 "use client";
 
-// This is a file with a demo for your component
-// That's what users will see in the preview
-// Create new files in this directory to add more demos
+import { Hero } from "@/components/ui/hero-1";
 
-import DataRain from "@/components/ui/data-rain";
-
-// ONLY DEFAULT EXPORT WILL BE TREATED AS A DEMO
 export default function DemoOne() {
-  return <DataRain />;
+  return (
+    <Hero
+      title="Build smarter tools for modern teams"
+      subtitle="Streamline your workflow and boost productivity with intuitive solutions. Security, speed, and simplicity, all in one platform."
+      eyebrow="Next-Gen Productivity"
+      ctaLabel="Get Started"
+      ctaHref="/sign-up"
+    />
+  );
 }

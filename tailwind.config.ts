@@ -13,6 +13,7 @@ const config: Config = {
         sans: ["var(--font-sans)", "sans-serif"],
         display: ["var(--font-sans)", "sans-serif"],
         serif: ["var(--font-serif)", "serif"],
+        geist: ["var(--font-geist-sans)", "var(--font-sans)", "sans-serif"],
       },
       colors: {
         ink: "#060814",
@@ -95,6 +96,20 @@ const config: Config = {
         sm: "6px",
         md: "12px",
         lg: "16px",
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(40px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 0.8s ease-out forwards",
+        "fade-up": "fade-up 0.8s ease-out forwards",
       },
     },
   },
