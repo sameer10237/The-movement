@@ -1,15 +1,17 @@
 "use client";
 
-import { Hero } from "@/components/ui/hero-1";
+import MarketingFeatureBento, {
+  MARKETING_BENTO_SAMPLE,
+} from "@/components/ui/marketing-feature-bento";
 
-export default function DemoOne() {
+export function MarketingFeatureBentoDemo() {
   return (
-    <Hero
-      title="Build smarter tools for modern teams"
-      subtitle="Streamline your workflow and boost productivity with intuitive solutions. Security, speed, and simplicity, all in one platform."
-      eyebrow="Next-Gen Productivity"
-      ctaLabel="Get Started"
-      ctaHref="/sign-up"
-    />
+    <div className="w-full">
+      <MarketingFeatureBento {...MARKETING_BENTO_SAMPLE} />
+    </div>
   );
 }
+
+export const DemoOne = MarketingFeatureBentoDemo;
+
+export default MarketingFeatureBentoDemo;

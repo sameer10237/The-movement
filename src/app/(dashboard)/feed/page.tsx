@@ -21,6 +21,9 @@ import {
 } from "@/components/feed/NewAnnouncementDialog"
 import { VerifyMediaDialog } from "@/components/feed/VerifyMediaDialog"
 import { Button } from "@/components/ui/button"
+import MarketingFeatureBento, {
+  MARKETING_BENTO_SAMPLE,
+} from "@/components/ui/marketing-feature-bento"
 
 const SIMULATED_ANNOUNCEMENTS: NewAnnouncementFormData[] = [
   {
@@ -531,6 +534,22 @@ export default function FeedPage() {
                 ))}
               </div>
             )}
+          </section>
+
+          {/* 3. Activity Feature Intelligence Bento */}
+          <section
+            aria-labelledby="activity-feature-bento-heading"
+            className="pt-6"
+          >
+            <div className="overflow-hidden rounded-2xl border-2 border-ink bg-[var(--bjork-bg)] shadow-hard">
+              <MarketingFeatureBento
+                {...MARKETING_BENTO_SAMPLE}
+                eyebrow="Activity Telemetry"
+                title="Real-time dispatch pipelines & verification engine"
+                description="Live traces, decentralized multi-sig verification, and operational health metrics across every movement broadcast."
+                className="py-12 sm:py-16"
+              />
+            </div>
           </section>
         </div>
       )}

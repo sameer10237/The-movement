@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import containerQueries from "@tailwindcss/container-queries";
 
 const config: Config = {
   darkMode: ["class"],
@@ -14,6 +15,8 @@ const config: Config = {
         display: ["var(--font-sans)", "sans-serif"],
         serif: ["var(--font-serif)", "serif"],
         geist: ["var(--font-geist-sans)", "var(--font-sans)", "sans-serif"],
+        "bjork-alpha": ["var(--font-sans)", "sans-serif"],
+        "bjork-display": ["var(--font-sans)", "sans-serif"],
       },
       colors: {
         ink: "#060814",
@@ -113,6 +116,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [containerQueries],
 };
 export default config;
